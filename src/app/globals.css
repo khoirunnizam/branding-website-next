@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+.burgernav div {
+  @apply block w-10 h-1 my-[10px] rounded transition-all duration-500 ;
+}
+
+.active div:nth-child(1) {
+  @apply rotate-45 origin-top-left;
+}
+.active div:nth-child(2) {
+  @apply opacity-0;
+}
+.active div:nth-child(3) {
+  @apply -rotate-45 origin-bottom-left;
+}
+
